@@ -6,7 +6,6 @@
 */
 @import url('./reset.css');
 @import url('./header.css');
-@import url('./footer.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -22,4 +21,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: linear-gradient(0deg, #000014 41%, #141629 100%);
 }
