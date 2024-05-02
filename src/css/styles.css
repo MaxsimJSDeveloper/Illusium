@@ -6,6 +6,7 @@
 */
 @import url('./reset.css');
 @import url('./header.css');
+@import url('./welcome.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -25,4 +26,9 @@
 
 body {
   background: linear-gradient(0deg, #000014 41%, #141629 100%);
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
 }

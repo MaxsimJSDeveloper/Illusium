@@ -1,0 +1,84 @@
+.welcome {
+  position: relative;
+  height: 70vh;
+  color: #fff;
+  overflow: hidden;
+}
+
+.el {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: currentColor;
+  height: 85px;
+  width: 85px;
+  margin-top: -25px;
+  margin-left: -25px;
+  opacity: 0;
+}
+
+.sigillayer-1 .el,
+.sigillayer-2 .el,
+.sigillayer-3 .el {
+  height: 100px;
+  width: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+.sigillayer-1 .el {
+  border-radius: 100%;
+}
+
+.sigillayer-3 .el {
+  border-width: 1px;
+}
+
+.sigilcenter .el {
+  margin-top: -12.5px;
+  margin-left: -12.5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  box-shadow: inset 0px -5px 0px 2px currentColor;
+  border: none;
+  opacity: 1;
+}
+
+.glyph {
+  position: absolute;
+  font-size: 20rem;
+  font-family: 'serif';
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.06;
+}
+
+.glyph--alpha {
+  left: 0;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.glyph--omega {
+  right: 0;
+  transform: translateY(-50%) translateX(50%);
+}
+
+.greetings-wrap {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.greetings {
+  font-family: 'NTR', sans-serif;
+  font-weight: 400;
+  font-size: 90px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #d2f5ef;
+}

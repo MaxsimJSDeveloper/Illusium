@@ -1,1 +1,2 @@
-console.log('hi');
+import { Sigil } from './js/welcome';
+new Sigil();
