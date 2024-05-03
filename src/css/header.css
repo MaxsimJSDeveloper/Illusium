@@ -6,19 +6,18 @@
   background-color: #141629;
   border-radius: 50px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  /* max-width: 1842px; */
   width: 100%;
   padding-right: 47px;
-  top: -100px;
   left: 0;
-  z-index: 10;
   transition: all 0.5s ease;
 }
 
-.header.fixed {
+.fixed {
   position: fixed;
   left: 32%;
   transform: translate(100px);
+  min-width: 977px;
+  z-index: 10;
 }
 
 .logo {
@@ -36,7 +35,7 @@
 }
 
 .logo-wrap.min {
-  margin-right: 290px;
+  /* margin-right: 290px; */
   padding-left: 0;
 }
 
