@@ -58,7 +58,7 @@ export class Sigil {
     });
 
     anime({
-      targets: 'body',
+      targets: 'welcome',
       backgroundColor: this.settings.themes[this.activeTheme].background,
       color: this.settings.themes[this.activeTheme].colour,
       easing: 'easeInOutQuad',

@@ -1,8 +1,9 @@
 .welcome {
   position: relative;
-  height: 70vh;
+  height: 90vh;
   color: #fff;
   overflow: hidden;
+  z-index: 1;
 }
 
 .el {
@@ -69,7 +70,7 @@
 .greetings-wrap {
   position: absolute;
   top: 80%;
-  left: 50%;
+  left: 51%;
   transform: translate(-50%, -50%);
 }
 
