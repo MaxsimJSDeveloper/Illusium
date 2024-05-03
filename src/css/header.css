@@ -1,23 +1,25 @@
 /* Header */
-.header-conteiner {
+.header {
+  position: relative;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  align-items: center;
   background-color: #141629;
   border-radius: 50px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  width: 100%;
   padding-right: 47px;
-  left: 0;
   transition: all 0.5s ease;
+  width: 100%;
+  transition: transform 0.5s ease;
 }
 
 .fixed {
   position: fixed;
-  left: 32%;
-  transform: translate(100px);
-  min-width: 977px;
+  top: 0;
+  left: 35%;
+  transform: transform 2s ease scale(0.9);
   z-index: 10;
+  max-width: 977px;
 }
 
 .logo {
@@ -76,4 +78,9 @@
   font-size: 40px;
   text-align: center;
   color: #d2f5ef;
+}
+
+.nav-link:hover {
+  color: #6ac17b;
+  transition: all 0.5s ease;
 }

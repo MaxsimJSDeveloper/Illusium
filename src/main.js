@@ -13,9 +13,11 @@ document.onscroll = function () {
     header.classList.add('fixed');
     logoWrap.classList.add('min');
     name.classList.add('delete');
+    document.body.style.paddingTop = headerH + 20 + 'px';
   } else {
     header.classList.remove('fixed');
     logoWrap.classList.remove('min');
     name.classList.remove('delete');
+    document.body.removeAttribute('style');
   }
 };
