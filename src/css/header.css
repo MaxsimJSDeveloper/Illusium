@@ -1,6 +1,6 @@
 /* Header */
-.header {
-  position: relative;
+
+.js-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,14 +10,12 @@
   padding-right: 47px;
   transition: all 0.5s ease;
   width: 100%;
-  transition: transform 0.5s ease;
+  margin: 0 auto;
 }
 
 .fixed {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 35%;
-  transform: transform 2s ease scale(0.9);
   z-index: 10;
   max-width: 977px;
 }
@@ -37,7 +35,6 @@
 }
 
 .logo-wrap.min {
-  /* margin-right: 290px; */
   padding-left: 0;
 }
 
