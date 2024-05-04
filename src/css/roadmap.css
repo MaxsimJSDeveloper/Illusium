@@ -1,0 +1,43 @@
+.roadmap-title {
+  padding-left: 24px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.roadmap-list {
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.img-wrap {
+  background: #15172a;
+  border-radius: 50px;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.roadmap-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1b1e37;
+  border-radius: 50px;
+  padding: 16px;
+  overflow: auto;
+  right: 100%;
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+}
