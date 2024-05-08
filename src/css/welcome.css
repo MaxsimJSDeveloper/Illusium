@@ -50,25 +50,6 @@
   opacity: 1;
 }
 
-.glyph {
-  position: absolute;
-  font-size: 20rem;
-  font-family: 'serif';
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0.06;
-}
-
-.glyph--alpha {
-  left: 0;
-  transform: translateY(-50%) translateX(-50%);
-}
-
-.glyph--omega {
-  right: 0;
-  transform: translateY(-50%) translateX(50%);
-}
-
 .greetings-wrap {
   position: absolute;
   top: 80%;
