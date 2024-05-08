@@ -13,13 +13,13 @@
     
     <script type="module" crossorigin src="/Illusium/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/Illusium/assets/vendor-37453147.js">
-    <link rel="stylesheet" href="/Illusium/assets/index-105fece2.css">
+    <link rel="stylesheet" href="/Illusium/assets/index-c6ee636a.css">
   </head>
   <body>
     <header class="header js-header">
   <div class="logo">
     <div class="logo-wrap">
-      <svg class="logo-icon" width="75px" height="75px" aria-label="logo">
+      <svg class="logo-icon" aria-label="logo">
         <use href="/Illusium/assets/icons-f9ecc09b.svg#logo"></use>
       </svg>
     </div>
@@ -46,24 +46,9 @@
     <main>
       <section class="welcome">
   <div class="container">
+    <div class="for-animation"></div>
     <div class="greetings-wrap">
       <h1 class="greetings">GameFi technology on scroll</h1>
-    </div>
-    <div class="sigil">
-      <div class="sigil-layer-1">
-        <div class="el"></div>
-        <div class="el"></div>
-      </div>
-      <div class="sigil-layer-2">
-        <div class="el"></div>
-        <div class="el"></div>
-        <div class="el"></div>
-      </div>
-      <div class="sigil-layer-3">
-        <div class="el"></div>
-        <div class="el"></div>
-        <div class="el"></div>
-      </div>
     </div>
   </div>
 </section>
@@ -73,7 +58,7 @@
     <div class="for-box">
       <div class="img">
         <h2 class="about-us-title">about us</h2>
-        <img src="/Illusium/assets/img-1-b5bc5197.png" width="400" height="400" />
+        <img src="./img/img-1.png" width="400" height="400" />
         <div class="overlay">
           <p class="text-info">
             illusium is created with the aim of enhancing gaming experience and
@@ -95,7 +80,7 @@
     <ul class="roadmap-list">
       <li class="roadmap-item">
         <div class="img-wrap">
-          <img src="/Illusium/assets/gamepad-1dd04b58.png" width="200" height="200" />
+          <img src="./img/gamepad.png" width="200" height="200" />
         </div>
         <div class="roadmap-overlay">
           <h3 class="overlay-title">STAGE 1 Q2 2024</h3>
@@ -104,7 +89,7 @@
       </li>
       <li class="roadmap-item">
         <div class="img-wrap">
-          <img src="data:image/png;base64,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" width="150" height="150" />
+          <img src="./img/cup.png" width="150" height="150" />
         </div>
         <div class="roadmap-overlay">
           <h3 class="overlay-title">STAGE 2 Q3 2024</h3>
@@ -113,7 +98,7 @@
       </li>
       <li class="roadmap-item">
         <div class="img-wrap">
-          <img src="/Illusium/assets/helmet-e40ef57b.png" width="200" height="200" />
+          <img src="./img/helmet.png" width="200" height="200" />
         </div>
         <div class="roadmap-overlay">
           <h3 class="overlay-title">STAGE 3 Q3 2024</h3>
@@ -124,7 +109,7 @@
       </li>
       <li class="roadmap-item">
         <div class="img-wrap">
-          <img src="/Illusium/assets/tesseract-8966077b.png" width="200" height="200" />
+          <img src="./img/tesseract.png" width="200" height="200" />
         </div>
         <div class="roadmap-overlay">
           <h3 class="overlay-title">STAGE 4 Q4 2024</h3>
