@@ -3,29 +3,12 @@ import anime from 'animejs';
 export class Sigil {
   constructor() {
     window.addEventListener('DOMContentLoaded', () => this.init());
-    setInterval(() => {
-      this.colourSwap();
-    }, 8000);
-    this.activeTheme = 0;
   }
 
-  get settings() {
-    return {
-      themes: [
-        { background: '#222', colour: '#eee' },
-        { background: '#eee', colour: '#222' },
-        { background: '#401a19', colour: '#ff3633' },
-        { background: '#300169', colour: '#f7ff00' },
-        { background: '#300023', colour: '#ff37de' },
-        { background: '#21200f', colour: '#fff949' },
-      ],
-    };
-  }
-
-  initLayers() {
+  initLayers(containerSelector) {
     const animateLayer = (layerSelector, scaleMin, scaleMax, duration) => {
       anime({
-        targets: layerSelector + ' .el',
+        targets: containerSelector + ' ' + layerSelector + ' .el',
         scale: () => anime.random(scaleMin, scaleMax),
         rotate: () => anime.random(0, 360),
         opacity: 1,
@@ -41,32 +24,33 @@ export class Sigil {
       });
     };
 
-    animateLayer('.sigil-layer-1', 2, 4, 4000);
-    animateLayer('.sigil-layer-2', 1.2, 2, 3000);
-    animateLayer('.sigil-layer-3', 4, 6, 2000);
+    animateLayer('.sigil-layer-1', 1, 2, 4000);
+    animateLayer('.sigil-layer-2', 0.6, 1, 3000);
+    animateLayer('.sigil-layer-3', 2, 3, 2000);
   }
 
-  colourSwap() {
-    this.activeTheme = Math.floor(Math.random() * this.settings.themes.length);
-
-    anime({
-      targets: '.el',
-      opacity: [
-        { value: 0.25, easing: 'linear' },
-        { value: 1, easing: 'linear' },
-      ],
-    });
-
-    anime({
-      targets: 'welcome',
-      backgroundColor: this.settings.themes[this.activeTheme].background,
-      color: this.settings.themes[this.activeTheme].colour,
-      easing: 'easeInOutQuad',
-      duration: 1000,
-    });
+  attachAnimationContainer() {
+    const container = document.querySelector('.for-animation');
+    container.innerHTML = `
+        <div class="sigil-layer-1">
+          <div class="el"></div>
+          <div class="el"></div>
+        </div>
+        <div class="sigil-layer-2">
+          <div class="el"></div>
+          <div class="el"></div>
+          <div class="el"></div>
+        </div>
+        <div class="sigil-layer-3">
+          <div class="el"></div>
+          <div class="el"></div>
+          <div class="el"></div>
+        </div>
+    `;
   }
 
   init() {
-    this.initLayers();
+    this.attachAnimationContainer();
+    this.initLayers('.for-animation');
   }
 }

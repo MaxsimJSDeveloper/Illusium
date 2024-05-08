@@ -1,68 +1,56 @@
 .welcome {
-  padding-top: 20px;
-  position: relative;
-  height: 90vh;
   color: #fff;
+}
+
+.for-animation {
+  width: 150px;
+  height: 150px;
   overflow: hidden;
-  z-index: 1;
-  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Центруємо контейнер по горизонталі */
 }
 
 .el {
   position: absolute;
-  top: 35%;
-  left: 50%;
-  border-width: 2px;
+  border-width: 0.2px;
   border-style: solid;
   border-color: currentColor;
-  height: 50px;
-  width: 50px;
-  margin-top: -25px;
-  margin-left: -25px;
+  height: 30px; /* Зменшено висоту на 30px */
+  width: 30px; /* Зменшено ширину на 30px */
   opacity: 0;
 }
 
-.sigillayer-1 .el,
-.sigillayer-2 .el,
-.sigillayer-3 .el {
-  height: 40px;
-  width: 40px;
-  margin-top: -50px;
-  margin-left: -50px;
+.sigil-layer-1 .el,
+.sigil-layer-2 .el,
+.sigil-layer-3 .el {
+  height: 24px; /* Зменшено висоту на 24px */
+  width: 24px; /* Зменшено ширину на 24px */
 }
 
-.sigillayer-1 .el {
+.sigil-layer-1 .el {
   border-radius: 100%;
 }
 
-.sigillayer-3 .el {
-  border-width: 1px;
+.sigil-layer-3 .el {
+  border-width: 0.5px; /* Зменшено ширину границі на 0.5px */
 }
 
-.sigilcenter .el {
-  margin-top: -12.5px;
-  margin-left: -12.5px;
-  width: 25px;
-  height: 25px;
+.sigil-center .el {
+  width: 15px; /* Зменшено ширину на 15px */
+  height: 15px; /* Зменшено висоту на 15px */
   border-radius: 50%;
-  box-shadow: inset 0px -5px 0px 2px currentColor;
+  box-shadow: inset 0px -3px 0px 1px currentColor; /* Зменшено тінь */
   border: none;
   opacity: 1;
-}
-
-.greetings-wrap {
-  position: absolute;
-  top: 80%;
-  left: 51%;
-  transform: translate(-50%, -50%);
 }
 
 .greetings {
   font-family: 'NTR', sans-serif;
   font-weight: 400;
-  font-size: 45px;
-  letter-spacing: 0.05em;
-  text-transform: capitalize;
+  font-size: 23px;
+  letter-spacing: 0.04em;
   text-align: center;
-  color: #d2f5ef;
+  color: #fff;
 }

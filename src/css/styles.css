@@ -35,11 +35,55 @@ body {
 }
 
 .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   margin: 0 auto;
-  max-width: 1440px;
 }
 
-.section-indent {
-  padding-top: 32px;
-  padding-bottom: 32px;
+@media (max-width: 849px) {
+  .container {
+    min-width: 375px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .section-indent {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (min-width: 850px) {
+  .container {
+    max-width: 850px;
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+  .section-indent {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 43px;
+    padding-right: 43px;
+  }
+  .section-indent {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 49px;
+  }
+  .section-indent {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }

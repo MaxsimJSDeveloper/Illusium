@@ -7,7 +7,7 @@
   background-color: #141629;
   border-radius: 50px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  padding-right: 47px;
+  padding-right: 11px;
   transition: all 0.5s ease;
   width: 100%;
   margin: 0 auto;
@@ -17,7 +17,7 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  max-width: 900px;
+  max-width: 226px;
 }
 
 .logo {
@@ -27,11 +27,12 @@
 }
 
 .logo-wrap {
-  border: #d2f5ef solid 1px;
-  padding-left: 50px;
-  border-radius: 152px;
-  margin-right: 20px;
+  border: 0.7px solid #fff;
+  padding-left: 15px;
+  border-radius: 35px;
+  margin-right: 10px;
   transition: all 0.5s ease;
+  height: 26px;
 }
 
 .logo-wrap.min {
@@ -41,17 +42,17 @@
 .logo-icon {
   fill: #15172a;
   border-radius: 152px;
+  width: 25px;
+  height: 25px;
 }
 
 .name {
-  font-family: 'NTR', sans-serif;
   font-weight: 400;
-  font-size: 45px;
+  font-size: 21px;
   letter-spacing: 0.05em;
   text-transform: capitalize;
   text-align: center;
   color: #d2f5ef;
-  transition: all 0.5s ease;
 }
 
 .name.delete {
@@ -66,13 +67,12 @@
 .nav-list {
   display: flex;
   flex-direction: row;
-  gap: 25px;
+  gap: 12px;
 }
 
 .nav-item {
-  font-family: 'NTR', sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 9px;
   text-align: center;
   color: #d2f5ef;
 }
