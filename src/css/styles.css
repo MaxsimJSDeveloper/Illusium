@@ -43,7 +43,7 @@ body {
 
 @media (max-width: 849px) {
   .container {
-    min-width: 375px;
+    min-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
   }

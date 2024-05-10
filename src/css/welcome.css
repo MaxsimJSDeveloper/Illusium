@@ -3,13 +3,14 @@
 }
 
 .for-animation {
-  width: 150px;
-  height: 150px;
+  width: 116px;
+  height: 102px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto; /* Центруємо контейнер по горизонталі */
+  margin: 0 auto;
+  margin-bottom: 16px; /* Центруємо контейнер по горизонталі */
 }
 
 .el {
@@ -47,9 +48,8 @@
 }
 
 .greetings {
-  font-family: 'NTR', sans-serif;
   font-weight: 400;
-  font-size: 23px;
+  font-size: 16px;
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;

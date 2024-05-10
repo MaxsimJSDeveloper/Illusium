@@ -1,57 +1,52 @@
-.about-us {
-  display: flex;
-}
-
-.img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  border-radius: 50px;
-  background-color: #15172a;
-  width: 525px;
-  height: 550px;
-  padding: 20px;
-}
-
-.for-box {
+/* CSS Styles */
+.card {
   display: flex;
   flex-direction: row;
+  position: relative;
+  width: 100%;
 }
 
-.box {
-  width: 525px;
+.icon-about-us {
+  display: none;
 }
 
 .about-us-title {
   font-weight: 400;
-  font-size: 50px;
+  font-size: 24px;
   line-height: 100%;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-align: center;
   color: #fff;
-  padding-bottom: 32px;
 }
 
-.img .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+.section-name {
+  height: 172px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #15172a;
+  z-index: 2;
+}
+
+.section-descr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 8px;
+  height: 172px;
   background-color: #1b1e37;
-  padding: 50px;
-  overflow: auto;
-  right: 100%;
-  opacity: 0;
-  transition: transform 0.5s, opacity 0.5s;
+  border-radius: 8px;
+  position: absolute;
+  left: 46%;
+  padding-left: 20px;
 }
 
 .text-info {
   font-weight: 400;
-  font-size: 30px;
+  font-size: 10px;
   line-height: 107%;
   letter-spacing: 0.04em;
   color: #fff;
