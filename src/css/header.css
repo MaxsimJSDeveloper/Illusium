@@ -60,8 +60,8 @@
   }
 
   .logo-icon {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
 
   .logo-wrap {
@@ -70,6 +70,7 @@
     margin-right: 10px;
     border-radius: 101px;
     transition: all 0.5s ease;
+    border: 2px solid #fff;
   }
 
   .logo-wrap.min {
@@ -116,6 +117,7 @@
     top: 0;
     z-index: 10;
     max-width: 642px;
+    height: 66px;
   }
 
   .logo {

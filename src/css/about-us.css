@@ -6,10 +6,6 @@
   width: 100%;
 }
 
-.icon-about-us {
-  display: none;
-}
-
 .about-us-title {
   font-weight: 400;
   font-size: 24px;
@@ -72,4 +68,51 @@
     border-radius: 22px;
     padding-left: 45px;
   }
+}
+
+@media (max-width: 1279px) {
+  .icon-about-us {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-name {
+    display: flex;
+    flex-direction: column;
+    padding: 26px;
+    height: 690px;
+    border-radius: 33px;
+  }
+
+  .about-us-title {
+    font-size: 100px;
+    padding-bottom: 92px;
+  }
+
+  .icon-about-us {
+    width: 500px;
+    height: 266px;
+  }
+
+  .section-descr {
+    height: 690px;
+    border-radius: 33px;
+    padding-left: 65px;
+  }
+
+  .text-info {
+    font-size: 43px;
+  }
+}
+
+.section-descr {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.section-descr.active {
+  opacity: 1;
+  transform: translateX(0);
 }

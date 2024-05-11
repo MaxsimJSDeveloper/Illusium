@@ -93,3 +93,37 @@
     color: #fff;
   }
 }
+
+@media (min-width: 1280px) {
+  .for-animation {
+    width: 425px;
+    height: 372px;
+    margin-bottom: 0;
+    padding-bottom: 28px;
+  }
+
+  .el {
+    height: 80px; /* Зменшено висоту на 30px */
+    width: 80px; /* Зменшено ширину на 30px */
+  }
+
+  .sigil-layer-1 .el,
+  .sigil-layer-2 .el,
+  .sigil-layer-3 .el {
+    height: 70px; /* Зменшено висоту на 24px */
+    width: 70px; /* Зменшено ширину на 24px */
+  }
+
+  .sigil-layer-3 .el {
+    border-width: 1px; /* Зменшено ширину границі на 0.5px */
+  }
+
+  .sigil-center .el {
+    width: 60px; /* Зменшено ширину на 15px */
+    height: 60px; /* Зменшено висоту на 15px */
+  }
+
+  .greetings {
+    font-size: 66px;
+  }
+}

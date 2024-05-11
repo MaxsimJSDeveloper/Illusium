@@ -28,6 +28,8 @@ export function animOnScroll() {
 
 function offset(el) {
   const rect = el.getBoundingClientRect();
-  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   return { top: rect.top + scrollTop };
 }
+
+window.addEventListener('scroll', animOnScroll);
