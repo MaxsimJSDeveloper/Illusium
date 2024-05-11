@@ -14,11 +14,13 @@
   flex-wrap: wrap;
   gap: 14px;
   flex-direction: row;
+  justify-content: center;
 }
 
 .roadmap-item {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .img-wrap {
@@ -38,7 +40,6 @@
 
 .roadmap-overlay {
   width: 136px;
-  padding: 2px;
   padding-top: 6px;
 }
 
@@ -60,4 +61,36 @@
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+}
+
+@media (min-width: 850px) {
+  .img-wrap {
+    height: 355px;
+    width: 355px;
+  }
+
+  .svg-size {
+    height: 230px;
+    width: 230px;
+  }
+
+  .roadmap-list {
+    gap: 38px;
+  }
+
+  .roadmap-title {
+    font-size: 60px;
+  }
+
+  .overlay-title {
+    font-size: 42px;
+  }
+
+  .overlay-text {
+    font-size: 28px;
+  }
+
+  .roadmap-overlay {
+    width: 370px;
+  }
 }

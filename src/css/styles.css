@@ -55,13 +55,13 @@ body {
 
 @media (min-width: 850px) {
   .container {
-    max-width: 850px;
+    min-width: 850px;
     padding-left: 29px;
     padding-right: 29px;
   }
   .section-indent {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -72,8 +72,8 @@ body {
     padding-right: 43px;
   }
   .section-indent {
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 }
 
