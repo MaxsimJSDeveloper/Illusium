@@ -1,14 +1,24 @@
 .sidebar {
-  position: absolute;
+  position: fixed;
   width: 74px;
   height: 201px;
   background-color: #15172a;
-  top: 0;
-  left: 0;
   display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+}
+
+.sidebar-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
 }
 
 .sidebar-item {
+  padding-left: 10px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 13px;
@@ -16,10 +26,13 @@
   color: #d2f5ef;
 }
 
+.sidebar-item:first-child {
+  margin-top: 5px;
+}
+
 .sidebar-anchor {
   color: #fff;
   position: relative; /* зберігаємо позицію відносно батька */
-  padding-bottom: 7px;
 }
 
 .sidebar-anchor:before {
@@ -39,4 +52,24 @@
 
 .sidebar-anchor:hover:before {
   width: 100%;
+}
+
+@media (min-width: 850px) {
+  .sidebar {
+    width: 196px;
+    height: 533px;
+  }
+
+  .sidebar-list {
+    gap: 30px;
+  }
+
+  .sidebar-item {
+    font-size: 35px;
+    padding-left: 20px;
+  }
+
+  .sidebar-item:first-child {
+    margin-top: 20px;
+  }
 }
