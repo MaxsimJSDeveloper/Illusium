@@ -1,0 +1,42 @@
+.sidebar {
+  position: absolute;
+  width: 74px;
+  height: 201px;
+  background-color: #15172a;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.sidebar-item {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  color: #d2f5ef;
+}
+
+.sidebar-anchor {
+  color: #fff;
+  position: relative; /* зберігаємо позицію відносно батька */
+  padding-bottom: 7px;
+}
+
+.sidebar-anchor:before {
+  content: '';
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: 0; /* змінено з absolute на relative */
+  left: 0;
+  background-color: #fff;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.sidebar-anchor:hover:before {
+  width: 100%;
+}

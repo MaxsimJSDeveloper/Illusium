@@ -9,6 +9,7 @@
 @import url('./welcome.css');
 @import url('./about-us.css');
 @import url('./roadmap.css');
+@import url('./modal-window.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;

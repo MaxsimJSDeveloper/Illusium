@@ -19,8 +19,10 @@
 }
 
 .burger-wrap {
+  position: relative;
   width: 19px;
   height: 14px;
+  z-index: 100;
 }
 
 .logo {
@@ -42,6 +44,76 @@
   width: 25px;
   height: 25px;
   fill: #15172a;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  height: 1.4px;
+  width: 19px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.button {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: auto;
+  margin: 0 auto;
+  transition: all 0.7s ease;
+  margin-left: 0;
+}
+
+.button.active .top {
+  transform: translateY(6.3px) rotateZ(45deg);
+}
+
+.button.active .bottom {
+  transform: translateY(-6.3px) rotateZ(-45deg);
+}
+
+.button.active .middle {
+  opacity: 0;
+}
+
+@media (min-width: 850px) {
+  .logo-icon {
+    width: 75px;
+    height: 75px;
+  }
+
+  .burger-wrap {
+    width: 42px;
+    height: 32px;
+  }
+
+  .bar {
+    height: 3.5px;
+    width: 48px;
+    margin-left: 12px;
+  }
+
+  .button {
+    gap: 12px;
+    width: auto;
+    margin: 0 auto;
+    transition: all 0.7s ease;
+  }
+  .button.active .top {
+    transform: translateY(15.5px) rotateZ(45deg);
+  }
+
+  .button.active .bottom {
+    transform: translateY(-15.5px) rotateZ(-45deg);
+  }
+
+  .button.active .middle {
+    opacity: 0;
+  }
 }
 
 @media (max-width: 1279px) {
