@@ -1,0 +1,120 @@
+.ecosystem-wrap {
+  border: 2px solid #fff;
+  border-radius: 37px;
+  width: 1326px;
+  height: 705px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.explore-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.box-def {
+  position: relative;
+  width: 419px;
+  height: 681px;
+  border: 3px solid #fff;
+  border-radius: 20px;
+}
+
+.explore-item {
+  border-radius: 20px;
+  width: 419px;
+  height: 670px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.pass,
+.games,
+.reward {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.ecosystem-title {
+  font-weight: 400;
+  font-size: 75px;
+  line-height: 55%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 400px;
+}
+
+.ecosystem-link-wrap {
+  background-color: #24243c;
+  border-radius: 37px;
+  width: 308px;
+  height: 132px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.ecosystem-link {
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 55%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #fff;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  width: 620px;
+  height: 465px;
+}
+
+.box1 {
+  background-color: #d2f5ef;
+  width: 160px;
+  height: 465px;
+}
+
+.box2 {
+  background-color: #fff;
+  width: 180px;
+  height: 245px;
+}
+
+.box3 {
+  position: relative;
+}
+
+.paral {
+  background-color: #86e0d1;
+  width: 165px;
+  height: 465px;
+}
+
+.rect {
+  background-color: #86e0d1;
+  width: 260px;
+  height: 148.5px;
+  position: absolute;
+  top: 68%;
+  right: 100%;
+}

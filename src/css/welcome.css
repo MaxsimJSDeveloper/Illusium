@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 16px; /* Центруємо контейнер по горизонталі */
+  margin-bottom: 16px;
 }
 
 .el {
@@ -18,8 +18,8 @@
   border-width: 0.2px;
   border-style: solid;
   border-color: currentColor;
-  height: 30px; /* Зменшено висоту на 30px */
-  width: 30px; /* Зменшено ширину на 30px */
+  height: 30px;
+  width: 30px;
   opacity: 0;
 }
 
@@ -125,5 +125,39 @@
 
   .greetings {
     font-size: 66px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .for-animation {
+    width: 477px;
+    height: 415px;
+    margin-bottom: 0;
+    padding-bottom: 28px;
+  }
+
+  .el {
+    height: 100px; /* Зменшено висоту на 30px */
+    width: 100px; /* Зменшено ширину на 30px */
+  }
+
+  .sigil-layer-1 .el,
+  .sigil-layer-2 .el,
+  .sigil-layer-3 .el {
+    height: 90px;
+    width: 90px;
+  }
+
+  .sigil-layer-3 .el {
+    border-width: 1.5px;
+  }
+
+  .sigil-center .el {
+    width: 80px;
+    height: 80px;
+  }
+
+  .greetings {
+    font-size: 75px;
   }
 }
