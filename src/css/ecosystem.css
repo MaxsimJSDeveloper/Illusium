@@ -1,8 +1,22 @@
+.ecosystem-name {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 8px;
+  margin-right: auto;
+}
+
 .ecosystem-wrap {
-  border: 2px solid #fff;
-  border-radius: 37px;
-  width: 1326px;
-  height: 705px;
+  border: 0.44px solid #fff;
+  border-radius: 8px;
+  width: 294px;
+  height: 156px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,16 +30,16 @@
 
 .box-def {
   position: relative;
-  width: 419px;
-  height: 681px;
-  border: 3px solid #fff;
-  border-radius: 20px;
+  border: 0.67px solid #fff;
+  border-radius: 4px;
+  width: 93px;
+  height: 151px;
 }
 
 .explore-item {
   border-radius: 20px;
-  width: 419px;
-  height: 670px;
+  width: 90px;
+  height: 145px;
   position: absolute;
   top: 0;
   left: 0;
@@ -49,21 +63,21 @@
 
 .ecosystem-title {
   font-weight: 400;
-  font-size: 75px;
+  font-size: 16px;
   line-height: 55%;
   letter-spacing: 0.04em;
   text-transform: capitalize;
   text-align: center;
   color: #fff;
-  padding-top: 50px;
-  padding-bottom: 400px;
+  padding-top: 10px;
+  padding-bottom: 90px;
 }
 
 .ecosystem-link-wrap {
   background-color: #24243c;
-  border-radius: 37px;
-  width: 308px;
-  height: 132px;
+  border-radius: 8px;
+  width: 68px;
+  height: 29px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,7 +86,7 @@
 
 .ecosystem-link {
   font-weight: 400;
-  font-size: 70px;
+  font-size: 15px;
   line-height: 55%;
   letter-spacing: 0.04em;
   text-transform: capitalize;
@@ -83,38 +97,278 @@
 .boxes {
   display: flex;
   justify-content: center;
-  gap: 60px;
-  width: 620px;
-  height: 465px;
+  gap: 14px;
+  width: 137px;
+  height: 103px;
+  margin: 20px 25px;
 }
 
 .box1 {
   background-color: #d2f5ef;
-  width: 160px;
-  height: 465px;
+  width: 35px;
+  height: 103px;
+}
+
+.box1:hover {
+  filter: brightness(70%);
 }
 
 .box2 {
   background-color: #fff;
-  width: 180px;
-  height: 245px;
+  width: 40px;
+  height: 55px;
+}
+
+.box2:hover {
+  filter: brightness(70%);
 }
 
 .box3 {
   position: relative;
 }
 
+.box3:hover {
+  filter: brightness(70%);
+}
+
+.box1,
+.box2,
+.box3 {
+  transition: filter 0.5s ease;
+}
+
 .paral {
   background-color: #86e0d1;
-  width: 165px;
-  height: 465px;
+  width: 36px;
+  height: 103px;
 }
 
 .rect {
   background-color: #86e0d1;
-  width: 260px;
-  height: 148.5px;
+  width: 52px;
+  height: 33px;
   position: absolute;
   top: 68%;
   right: 100%;
+}
+
+@media (min-width: 850px) {
+  .ecosystem-name {
+    font-size: 66px;
+    margin-bottom: 10px;
+  }
+
+  .ecosystem-wrap {
+    border: 1.18px solid #fff;
+    border-radius: 22px;
+    width: 782px;
+    height: 416px;
+  }
+
+  .box-def {
+    border: 1.77px solid #fff;
+    border-radius: 12px;
+    width: 247px;
+    height: 401px;
+  }
+
+  .explore-item {
+    border-radius: 20px;
+    width: 245px;
+    height: 395px;
+  }
+
+  .ecosystem-title {
+    font-size: 44px;
+    padding-top: 30px;
+    padding-bottom: 240px;
+  }
+
+  .ecosystem-link-wrap {
+    border-radius: 22px;
+    width: 181px;
+    height: 77px;
+  }
+
+  .ecosystem-link {
+    font-size: 41px;
+  }
+
+  .boxes {
+    gap: 36px;
+    width: 364px;
+    height: 275px;
+    margin: 64px 72px;
+  }
+
+  .box1 {
+    width: 94px;
+    height: 274px;
+  }
+
+  .box2 {
+    width: 105px;
+    height: 144px;
+  }
+
+  .box3 {
+    position: relative;
+  }
+
+  .paral {
+    width: 97px;
+    height: 274px;
+  }
+
+  .rect {
+    width: 139px;
+    height: 90px;
+    top: 66.9%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .ecosystem-name {
+    font-size: 99px;
+    margin-bottom: 14px;
+  }
+
+  .ecosystem-wrap {
+    border: 1.78px solid #fff;
+    border-radius: 33px;
+    width: 1178px;
+    height: 626px;
+  }
+
+  .box-def {
+    border: 2.67px solid #fff;
+    border-radius: 18px;
+    width: 372px;
+    height: 605px;
+  }
+
+  .explore-item {
+    border-radius: 18px;
+    width: 371px;
+    height: 603px;
+  }
+
+  .ecosystem-title {
+    font-size: 66px;
+    padding-top: 40px;
+    padding-bottom: 340px;
+  }
+
+  .ecosystem-link-wrap {
+    border-radius: 33px;
+    width: 273px;
+    height: 117px;
+  }
+
+  .ecosystem-link {
+    font-size: 62px;
+  }
+
+  .boxes {
+    gap: 54px;
+    width: 550px;
+    height: 415px;
+    margin: 106px;
+  }
+
+  .box1 {
+    width: 142px;
+    height: 413px;
+  }
+
+  .box2 {
+    width: 159px;
+    height: 216px;
+  }
+
+  .box3 {
+    position: relative;
+  }
+
+  .paral {
+    width: 146px;
+    height: 413px;
+  }
+
+  .rect {
+    width: 209px;
+    height: 134px;
+    top: 67.1%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .ecosystem-name {
+    font-size: 112px;
+    margin-bottom: 20px;
+  }
+
+  .ecosystem-wrap {
+    border: 2px solid #fff;
+    border-radius: 37px;
+    width: 1326px;
+    height: 705px;
+  }
+
+  .box-def {
+    border: 3px solid #fff;
+    border-radius: 20px;
+    width: 419px;
+    height: 681px;
+  }
+
+  .explore-item {
+    border-radius: 20px;
+    width: 419px;
+    height: 681px;
+  }
+
+  .ecosystem-title {
+    font-size: 75px;
+    padding-top: 48px;
+    padding-bottom: 390px;
+  }
+
+  .ecosystem-link-wrap {
+    border-radius: 37px;
+    width: 308px;
+    height: 132px;
+  }
+
+  .ecosystem-link {
+    font-size: 70px;
+  }
+
+  .boxes {
+    gap: 60px;
+    width: 618px;
+    height: 465px;
+    margin: 120px;
+  }
+
+  .box1 {
+    width: 160px;
+    height: 465px;
+  }
+
+  .box2 {
+    width: 179px;
+    height: 244px;
+  }
+
+  .paral {
+    width: 165px;
+    height: 465px;
+  }
+
+  .rect {
+    width: 236px;
+    height: 151px;
+    top: 67.6%;
+  }
 }
