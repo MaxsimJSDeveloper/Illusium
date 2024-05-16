@@ -11,9 +11,9 @@
     
     
     <title>Pass</title>
-    <script type="module" crossorigin src="/Illusium/assets/vendor-37453147.js"></script>
-    <script type="module" crossorigin src="/Illusium/assets/main-1071837d.js"></script>
-    <link rel="stylesheet" href="/Illusium/assets/pass-7f0ff26d.css">
+    <script type="module" crossorigin src="/Illusium/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/Illusium/assets/sidebar-ac10dcbd.js">
+    <link rel="stylesheet" href="/Illusium/assets/pass-795d00c8.css">
   </head>
   <body>
     <header class="header js-header">
@@ -36,7 +36,7 @@
   <nav class="nav">
     <ul class="nav-list">
       <li class="nav-item">
-        <a href="" class="nav-link">Home</a>
+        <a href="./index.html" class="nav-link">Home</a>
       </li>
       <li class="nav-item">
         <a href="./pass.html" class="nav-link">Pass</a>
@@ -49,14 +49,36 @@
       </li>
     </ul>
   </nav>
+  <div class="content-btn"><p class="text">Connect Wallet</p></div>
 </header>
 
     <main>
       <section class="anim">
-        <div class="logo-wrap">
-          <img src="./img/logo-anim.gif" alt="logo-anim" />
-        </div>
-      </section>
+  <div class="container section-indent">
+    <div class="anim-logo-wrap">
+      <img class="logo-anim" src="/Illusium/assets/logo-anim-d99a84dc.PNG" alt="logo-anim" />
+    </div>
+    <div class="mint"><p class="mint-text">MINT</p></div>
+  </div>
+</section>
+
+      <div class="sidebar">
+  <ul class="sidebar-list">
+    <li class="sidebar-item">
+      <a href="./index.html" class="sidebar-anchor">Home</a>
+    </li>
+    <li class="sidebar-item">
+      <a href="./pass.html" class="sidebar-anchor">Pass</a>
+    </li>
+    <li class="sidebar-item">
+      <a href="" class="sidebar-anchor">Games</a>
+    </li>
+    <li class="sidebar-item">
+      <a href="" class="sidebar-anchor">Reward</a>
+    </li>
+  </ul>
+</div>
+
     </main>
   </body>
 </html>

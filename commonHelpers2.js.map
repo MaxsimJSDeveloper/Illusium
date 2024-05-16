@@ -1,1 +1,1 @@
-{"version":3,"file":"commonHelpers2.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"commonHelpers2.js","sources":["../src/pass.js"],"sourcesContent":["import { toggleSidebar } from './js/sidebar';\n\ndocument.getElementById('btn').addEventListener('click', toggleSidebar);\n"],"names":["toggleSidebar"],"mappings":"4CAEA,SAAS,eAAe,KAAK,EAAE,iBAAiB,QAASA,CAAa"}
