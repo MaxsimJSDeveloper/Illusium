@@ -1,0 +1,60 @@
+.js-header {
+  justify-content: space-between;
+  padding-right: 0;
+  position: fixed;
+}
+
+.logo {
+  display: none;
+}
+
+.content-btn {
+  border-radius: 39px;
+  border: solid 0.75px #fff;
+  width: 99px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #d2f5ef;
+}
+
+@media (min-width: 850px) {
+  .content-btn {
+    border-radius: 104px;
+    border: solid 2px #fff;
+    width: 264px;
+    height: 70px;
+  }
+
+  .text {
+    font-size: 31px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .logo {
+    display: flex;
+  }
+}
+
+@media (min-width: 1440px) {
+  .text {
+    font-size: 35px;
+  }
+
+  .content-btn {
+    border-radius: 113px;
+    border: solid 2.25px #fff;
+    width: 290px;
+    height: 76px;
+  }
+}

@@ -1,0 +1,120 @@
+.anim {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.anim-logo-wrap {
+  border: 1px solid #fff;
+  border-radius: 11px;
+  width: 98px;
+  height: 98px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-anim {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+.mint {
+  border-radius: 7px;
+  width: 64px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #15172a;
+}
+
+.mint-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 55%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #fff;
+}
+
+@media (min-width: 850px) {
+  .anim-logo-wrap {
+    border: 1px solid #fff;
+    border-radius: 30px;
+    width: 262px;
+    height: 262px;
+    margin-bottom: 20px;
+  }
+
+  .logo-anim {
+    border-radius: 30px;
+  }
+
+  .mint {
+    border-radius: 19px;
+    width: 170px;
+    height: 72px;
+  }
+
+  .mint-text {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .anim {
+    padding-top: 70px;
+  }
+
+  .anim-logo-wrap {
+    border: 2px solid #fff;
+    border-radius: 44px;
+    width: 387px;
+    height: 387px;
+    margin-bottom: 30px;
+  }
+
+  .logo-anim {
+    border-radius: 44px;
+  }
+
+  .mint {
+    border-radius: 29px;
+    width: 252px;
+    height: 107px;
+  }
+
+  .mint-text {
+    font-size: 57px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .anim-logo-wrap {
+    border: 2.25px solid #eee;
+    border-radius: 50px;
+    width: 436px;
+    height: 436px;
+    margin-bottom: 35px;
+  }
+
+  .logo-anim {
+    border-radius: 50px;
+  }
+
+  .mint {
+    border-radius: 33px;
+    width: 284px;
+    height: 121px;
+  }
+
+  .mint-text {
+    font-size: 65px;
+  }
+}

@@ -80,6 +80,10 @@
   opacity: 0;
 }
 
+.content-btn {
+  display: none;
+}
+
 @media (min-width: 850px) {
   .logo-icon {
     width: 75px;
