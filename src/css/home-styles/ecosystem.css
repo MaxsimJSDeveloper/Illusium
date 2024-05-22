@@ -37,6 +37,11 @@
 }
 
 .explore-item {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 20px;
   width: 90px;
   height: 145px;
@@ -70,7 +75,27 @@
   text-align: center;
   color: #fff;
   padding-top: 10px;
-  padding-bottom: 90px;
+}
+
+.ecosystem-title:before {
+  content: '';
+  width: 80%;
+  height: 0.66px;
+  background-color: #fff;
+  position: absolute;
+  top: 19%;
+  left: 11%;
+  transform: translateY(-50%);
+}
+
+.ecosystem-descr {
+  font-weight: 400;
+  font-size: 7px;
+  line-height: 12px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #fff;
 }
 
 .ecosystem-link-wrap {
@@ -181,7 +206,15 @@
   .ecosystem-title {
     font-size: 44px;
     padding-top: 30px;
-    padding-bottom: 240px;
+  }
+
+  .ecosystem-title:before {
+    height: 1.77px;
+  }
+
+  .ecosystem-descr {
+    font-size: 20px;
+    line-height: 33px;
   }
 
   .ecosystem-link-wrap {
@@ -249,6 +282,7 @@
 
   .explore-item {
     border-radius: 18px;
+    padding: 15px 20px;
     width: 371px;
     height: 603px;
   }
@@ -256,7 +290,15 @@
   .ecosystem-title {
     font-size: 66px;
     padding-top: 40px;
-    padding-bottom: 340px;
+  }
+
+  .ecosystem-title:before {
+    height: 2.66px;
+  }
+
+  .ecosystem-descr {
+    font-size: 31px;
+    line-height: 49px;
   }
 
   .ecosystem-link-wrap {
@@ -326,12 +368,21 @@
     border-radius: 20px;
     width: 419px;
     height: 681px;
+    padding: 20px 25px;
   }
 
   .ecosystem-title {
     font-size: 75px;
     padding-top: 48px;
-    padding-bottom: 390px;
+  }
+
+  .ecosystem-title:before {
+    height: 3px;
+  }
+
+  .ecosystem-descr {
+    font-size: 35px;
+    line-height: 56px;
   }
 
   .ecosystem-link-wrap {

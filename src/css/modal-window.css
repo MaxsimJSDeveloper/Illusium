@@ -41,7 +41,7 @@
   width: 0;
   height: 1px;
   position: absolute;
-  bottom: 0; /* змінено з absolute на relative */
+  bottom: 0;
   left: 0;
   background-color: #fff;
   -webkit-transition: all 0.7s ease-in-out;

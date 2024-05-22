@@ -2,6 +2,7 @@
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -20,7 +21,18 @@
 .logo-anim {
   width: 100%;
   height: 100%;
-  border-radius: 7px;
+  border-radius: 11px;
+}
+
+.anim-section-text {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 5px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 12px;
 }
 
 .mint {
@@ -44,6 +56,10 @@
 }
 
 @media (min-width: 850px) {
+  .anim {
+    height: 100%;
+  }
+
   .anim-logo-wrap {
     border: 1px solid #fff;
     border-radius: 30px;
@@ -54,6 +70,12 @@
 
   .logo-anim {
     border-radius: 30px;
+  }
+
+  .anim-section-text {
+    font-size: 25px;
+    line-height: 14px;
+    margin-bottom: 20px;
   }
 
   .mint {
@@ -84,6 +106,12 @@
     border-radius: 44px;
   }
 
+  .anim-section-text {
+    font-size: 40px;
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+
   .mint {
     border-radius: 29px;
     width: 252px;
@@ -106,6 +134,12 @@
 
   .logo-anim {
     border-radius: 50px;
+  }
+
+  .anim-section-text {
+    font-size: 45px;
+    line-height: 25px;
+    margin-bottom: 35px;
   }
 
   .mint {
