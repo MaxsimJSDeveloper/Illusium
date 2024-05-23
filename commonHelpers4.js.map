@@ -1,0 +1,1 @@
+{"version":3,"file":"commonHelpers4.js","sources":["../src/reward.js"],"sourcesContent":["import { toggleSidebar } from './js/sidebar';\n\ndocument.getElementById('btn').addEventListener('click', toggleSidebar);\n"],"names":["toggleSidebar"],"mappings":"iDAEA,SAAS,eAAe,KAAK,EAAE,iBAAiB,QAASA,CAAa"}
