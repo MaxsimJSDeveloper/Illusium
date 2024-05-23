@@ -20,8 +20,6 @@
 
 .sidebar-item {
   padding-left: 10px;
-  font-family: var(--font-family);
-  font-weight: 400;
   font-size: 13px;
   text-align: center;
   color: #d2f5ef;

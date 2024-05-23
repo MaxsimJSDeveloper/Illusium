@@ -1,0 +1,40 @@
+.burger-wrap {
+  position: relative;
+  width: 19px;
+  height: 14px;
+  z-index: 100;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  height: 1.4px;
+  width: 19px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.button {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: auto;
+  margin: 0 auto;
+  transition: all 0.7s ease;
+  margin-left: 0;
+}
+
+.button.active .top {
+  transform: translateY(6.3px) rotateZ(45deg);
+}
+
+.button.active .bottom {
+  transform: translateY(-6.3px) rotateZ(-45deg);
+}
+
+.button.active .middle {
+  opacity: 0;
+}

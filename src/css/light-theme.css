@@ -1,0 +1,43 @@
+.js-header {
+  background-color: #cdf4ee;
+}
+
+.sidebar-item {
+  color: #15172a;
+}
+
+.content-btn {
+  color: #15172a;
+  border: solid 2px #15172a;
+}
+
+.bar {
+  background-color: #15172a;
+}
+
+.logo-wrap {
+  border-color: #15172a;
+}
+
+.name {
+  color: #15172a;
+}
+
+.nav-item {
+  color: #15172a;
+}
+
+.light-logo {
+  display: none;
+}
+
+.dark-logo {
+  display: flex;
+}
+
+@media (min-width: 1280px) {
+  .logo-wrap {
+    padding-right: 45px;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,249 @@
+.user {
+  padding-top: 25px;
+}
+
+.bacground {
+  width: 270px;
+  background-color: #15172a;
+  background-image: url('../../img/star.svg');
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  border: solid 1.3px #d2f5ef;
+}
+
+.user-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+  border: solid 1.3px #d2f5ef;
+  padding: 10px;
+}
+
+.user-week {
+  font-size: 29px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #cdf4ee;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.user-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 18px;
+  padding: 15px;
+}
+
+.box-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-size {
+  border-radius: 2px;
+  width: 60px;
+  height: 60px;
+  background-color: #292d52;
+  margin-bottom: 8px;
+}
+
+.box-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+}
+
+.box-points {
+  font-size: 8px;
+  text-align: center;
+  color: #fff;
+}
+
+.points {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 20px;
+  border-radius: 6px 6px 0 0;
+  border: solid 1.3px #d2f5ef;
+}
+
+.points-title {
+  font-size: 20px;
+  text-align: center;
+  color: #cdf4ee;
+}
+
+.lvl {
+  font-size: 12px;
+  color: #cdf4ee;
+}
+
+.progressbar {
+  margin-bottom: 4px;
+}
+
+.exp {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.progress {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 8px;
+  color: #cdf4ee;
+}
+
+.points-subtitle {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 8px;
+}
+
+.requirement-list {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.requirement-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.requirement-title {
+  font-size: 10px;
+  text-align: center;
+  color: #cdf4ee;
+  text-transform: capitalize;
+}
+
+.requirement-field {
+  padding: 0 8px;
+  background-color: #292d52;
+  border-radius: 6px;
+}
+
+.requirement-text {
+  font-size: 10px;
+  text-align: center;
+  color: #cdf4ee;
+}
+
+.counter {
+  display: flex;
+  flex-direction: row;
+}
+
+.counter-field {
+  padding: 0 6px;
+  background-color: #292d52;
+  border-radius: 6px;
+  font-size: 10px;
+  text-align: center;
+  color: #cdf4ee;
+  display: flex;
+  align-items: center;
+  margin: 0 2px;
+}
+
+.insufficient-btn {
+  padding: 2px 4px;
+  font-size: 8px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  background-color: #d9d9d9;
+}
+
+.reffle {
+  padding: 10px 20px;
+}
+
+.colection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.winners {
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+  border-right: solid 1px #fff;
+}
+
+.wi {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 6px;
+}
+
+.number-wins {
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #cdf4ee;
+  margin-bottom: 6px;
+}
+
+.numbers-win {
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #fff;
+  margin-right: 4px;
+}
+
+.winners-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.winners-list-item {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+}
+
+.win-box {
+  display: block;
+  border-radius: 2px;
+  width: 14px;
+  height: 14px;
+  background-color: #292d52;
+}
+
+.winners-text {
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #fff;
+}

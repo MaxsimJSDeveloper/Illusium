@@ -1,0 +1,11 @@
+@import url('./main.css');
+@import url('./header.css');
+@import url('./reward-styles/user.css');
+@import url('./modal-window.css');
+@import url('./content-btn.css');
+@import url('./logo.css');
+@import url('./light-theme.css');
+
+body {
+  background: linear-gradient(180deg, #d2f5ef 0%, #86e0da 46.5%);
+}
