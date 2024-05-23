@@ -1,8 +1,6 @@
 .roadmap-title {
-  font-weight: 400;
   font-size: 24px;
   line-height: 100%;
-  letter-spacing: 0.04em;
   text-transform: capitalize;
   color: #fff;
   margin-right: auto;
@@ -55,26 +53,23 @@
 }
 
 .overlay-text {
-  font-weight: 400;
   font-size: 10px;
-  line-height: 1.2; /* Змінено з 100% на 1.2 */
-  letter-spacing: 0.04em;
+  line-height: 1.2;
   text-align: center;
   color: #fff;
 }
 
 .roadmap-overlay {
   opacity: 0;
-  transform: translateY(50px); /* Начальное состояние: сдвиг вниз на 50px */
+  transform: translateY(50px);
   transition: opacity 1s ease, transform 1s ease;
 }
 
 .roadmap-overlay.active {
   opacity: 1;
-  transform: translateY(0); /* Конечное состояние: сдвиг вверх на 0 */
+  transform: translateY(0);
 }
 
-/* Задержка анимации для каждого элемента */
 .roadmap-item:nth-child(1) .roadmap-overlay {
   transition-delay: 0.3s;
 }
@@ -165,18 +160,14 @@
   }
 
   .overlay-title {
-    font-weight: 400;
     font-size: 38px;
     line-height: 1;
-    letter-spacing: 0.04em;
     text-transform: capitalize;
     color: #000014;
   }
   .overlay-text {
-    font-weight: 400;
     font-size: 26px;
     line-height: 100%;
-    letter-spacing: 0.04em;
     color: #15172a;
   }
 }
@@ -220,6 +211,7 @@
   .overlay-title {
     font-size: 45px;
   }
+
   .overlay-text {
     font-size: 30px;
   }

@@ -158,7 +158,6 @@
   }
 
   .name {
-    font-weight: 400;
     font-size: 60px;
     letter-spacing: 0.05em;
     text-transform: capitalize;
@@ -178,14 +177,13 @@
   }
 
   .nav-item {
-    font-weight: 400;
     font-size: 26px;
     text-align: center;
     color: #d2f5ef;
   }
 
   .nav-item:hover {
-    color: #00a2ff;
+    color: #0066ff;
     transition: all 0.5s ease;
   }
 
@@ -219,11 +217,11 @@
   .nav-item:before,
   .nav-item:after {
     position: absolute;
-    top: 50%; /* змінили з 22px на 50% */
+    top: 50%;
     left: 50%;
     width: 50px;
     height: 50px;
-    border: 4px solid #0277bd;
+    border: 4px solid #0057da;
     transform: translateX(-50%) translateY(-50%) scale(0.8);
     border-radius: 50%;
     background: transparent;

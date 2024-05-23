@@ -19,12 +19,10 @@
 }
 
 .text {
-  font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.05em;
   text-transform: capitalize;
   text-align: center;
-  color: #d2f5ef;
 }
 
 @media (min-width: 850px) {
