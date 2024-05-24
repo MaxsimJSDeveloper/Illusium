@@ -1,10 +1,11 @@
 .anim {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 75px;
 }
 
 .anim-logo-wrap {
@@ -56,10 +57,6 @@
 }
 
 @media (min-width: 850px) {
-  .anim {
-    height: 100%;
-  }
-
   .anim-logo-wrap {
     border: 1px solid #fff;
     border-radius: 30px;
@@ -90,10 +87,6 @@
 }
 
 @media (min-width: 1280px) {
-  .anim {
-    padding-top: 70px;
-  }
-
   .anim-logo-wrap {
     border: 2px solid #fff;
     border-radius: 44px;

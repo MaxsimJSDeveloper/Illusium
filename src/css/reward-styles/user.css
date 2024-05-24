@@ -1,24 +1,33 @@
 .user {
   padding-top: 25px;
+  min-height: 100vh;
 }
 
 .bacground {
+  position: relative;
   width: 270px;
   background-color: #15172a;
-  background-image: url('../../img/star.svg');
-  background-repeat: no-repeat;
   border-radius: 6px;
   border: solid 1.3px #d2f5ef;
+}
+
+.svg-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../img/star-min.svg');
+  background-repeat: no-repeat;
+  top: -5%;
+  left: -10%;
 }
 
 .user-head {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 6px;
   border: solid 1.3px #d2f5ef;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .user-week {
@@ -30,18 +39,33 @@
 
 .timer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
   gap: 15px;
+}
+
+.field {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.value {
+  padding: 0 2px;
+  display: inline-block;
+  height: 8px;
+  font-size: 10px;
+  text-align: center;
+  color: #fff;
+  border-radius: 2px;
+  background-color: #292d52;
+}
+
+.label {
+  font-size: 12px;
 }
 
 .user-box {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
   gap: 18px;
   padding: 15px;
 }
@@ -50,7 +74,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .box-size {
@@ -59,6 +82,7 @@
   height: 60px;
   background-color: #292d52;
   margin-bottom: 8px;
+  z-index: 10;
 }
 
 .box-title {
@@ -75,9 +99,6 @@
 }
 
 .points {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   padding: 10px 20px;
   border-radius: 6px 6px 0 0;
   border: solid 1.3px #d2f5ef;
@@ -98,15 +119,8 @@
   margin-bottom: 4px;
 }
 
-.exp {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
 .progress {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   font-size: 8px;
   color: #cdf4ee;
@@ -121,8 +135,8 @@
 .requirement-list {
   margin-top: 8px;
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 8px 16px;
 }
 
@@ -144,9 +158,8 @@
   padding: 0 8px;
   background-color: #292d52;
   border-radius: 6px;
-}
-
-.requirement-text {
+  display: inline-block;
+  height: 9px;
   font-size: 10px;
   text-align: center;
   color: #cdf4ee;
@@ -154,7 +167,6 @@
 
 .counter {
   display: flex;
-  flex-direction: row;
 }
 
 .counter-field {
@@ -184,29 +196,31 @@
   padding: 10px 20px;
 }
 
+.raffle-title {
+  font-size: 20px;
+  text-align: center;
+  color: #cdf4ee;
+}
+
 .colection {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
 .winners {
   display: flex;
   flex-direction: column;
-  padding-right: 40px;
+  padding-right: 43px;
   border-right: solid 1px #fff;
 }
 
 .wi {
   display: flex;
-  flex-direction: row;
   margin-bottom: 6px;
 }
 
 .number-wins {
   font-size: 10px;
-  letter-spacing: 0.04em;
   text-transform: capitalize;
   color: #cdf4ee;
   margin-bottom: 6px;
@@ -214,7 +228,6 @@
 
 .numbers-win {
   font-size: 10px;
-  letter-spacing: 0.04em;
   text-transform: capitalize;
   color: #fff;
   margin-right: 4px;
@@ -228,7 +241,6 @@
 
 .winners-list-item {
   display: flex;
-  flex-direction: row;
   gap: 4px;
   align-items: center;
 }
@@ -243,7 +255,619 @@
 
 .winners-text {
   font-size: 10px;
-  letter-spacing: 0.04em;
   text-transform: capitalize;
   color: #fff;
+}
+
+@media (min-width: 850px) {
+  .user {
+    padding-top: 50px;
+  }
+
+  .bacground {
+    width: 700px;
+    border-radius: 17px;
+    border: solid 3px #d2f5ef;
+  }
+
+  .svg-box {
+    position: absolute;
+    background-image: url('../../img/star.svg');
+    background-repeat: no-repeat;
+    background-size: 520px;
+    top: -5%;
+    left: -8%;
+  }
+
+  .user-week {
+    font-size: 78px;
+  }
+
+  .user-head {
+    border-radius: 13.2px;
+    border: solid 3px #d2f5ef;
+    padding: 10px 0;
+  }
+
+  .value {
+    padding: 0 5px;
+    height: 22px;
+    font-size: 26px;
+    border-radius: 5px;
+  }
+
+  .label {
+    font-size: 29px;
+  }
+
+  /* Box */
+  .user-box {
+    gap: 0 80px;
+    padding: 15px;
+  }
+
+  .box-size {
+    border-radius: 6px;
+    width: 138px;
+    height: 130px;
+    margin-bottom: 12px;
+  }
+
+  .box-title {
+    font-size: 24px;
+  }
+
+  .box-points {
+    font-size: 12px;
+  }
+
+  /* Points */
+  .points {
+    padding: 10px 80px;
+    border-radius: 13px 13px 0 0;
+    border: solid 3px #d2f5ef;
+  }
+
+  .points-title {
+    font-size: 48px;
+    margin-bottom: 8px;
+  }
+
+  .lvl {
+    font-size: 27px;
+  }
+
+  .progressbar {
+    margin-bottom: 8px;
+  }
+
+  .progress {
+    font-size: 14px;
+  }
+
+  .points-subtitle {
+    font-size: 35px;
+    margin-top: 12px;
+  }
+
+  .requirement-list {
+    margin-top: 8px;
+    gap: 24px 60px;
+  }
+
+  .requirement-title {
+    font-size: 20px;
+  }
+
+  .requirement-field {
+    padding: 0 12px;
+    height: 20px;
+    font-size: 20px;
+  }
+
+  .counter-field {
+    padding: 0 10px;
+    border-radius: 6px;
+    font-size: 20px;
+    margin: 0 4px;
+  }
+
+  .sign {
+    font-size: 29px;
+    text-align: center;
+  }
+
+  .insufficient-btn {
+    padding: 4px 10px;
+    font-size: 16px;
+    border-radius: 7px;
+  }
+
+  /* raffle */
+  .reffle {
+    padding: 10px 80px;
+  }
+
+  .raffle-title {
+    font-size: 48px;
+    margin-bottom: 8px;
+  }
+
+  .winners {
+    padding-right: 120px;
+    border-right: solid 2px #fff;
+  }
+
+  .wi {
+    display: flex;
+    margin-bottom: 8px;
+  }
+
+  .number-wins {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .numbers-win {
+    font-size: 20px;
+    margin-right: 4px;
+  }
+
+  .winners-list {
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+
+  .winners-list-item {
+    gap: 8px;
+  }
+
+  .win-box {
+    border-radius: 6px;
+    width: 39px;
+    height: 39px;
+  }
+
+  .winners-text {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #fff;
+  }
+}
+
+@media (min-width: 1280px) {
+  .user {
+    padding-top: 75px;
+  }
+
+  .bacground {
+    position: relative;
+    width: 1120px;
+    border-radius: 25px;
+    border: solid 5px #d2f5ef;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .svg-box {
+    position: absolute;
+    background-image: url('../../img/star-d.svg');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    top: -5%;
+    left: -2%;
+  }
+
+  .folder-1 {
+    position: absolute;
+    background-image: url('../../img/Group35.png');
+    background-repeat: no-repeat;
+    background-size: 510px 270px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 6%;
+    left: 52%;
+  }
+
+  .folder-2 {
+    position: absolute;
+    background-image: url('../../img/Group34.png');
+    background-repeat: no-repeat;
+    background-size: 510px 250px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 58%;
+    left: 52%;
+  }
+
+  .I {
+    border-right: solid 5px #d2f5ef;
+  }
+
+  .user-head {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    padding: 45px 0;
+    border-radius: 18px 0 18px 18px;
+    border: solid 5px #d2f5ef;
+  }
+
+  .user-box {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  .points {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+  }
+
+  .reffle {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+
+  .user-week {
+    font-size: 118px;
+  }
+
+  .value {
+    padding: 0 8px;
+    height: 42px;
+    font-size: 40px;
+    border-radius: 5px;
+    z-index: 10;
+  }
+
+  .label {
+    font-size: 44px;
+  }
+  /* Box */
+  .user-box {
+    gap: 0 68px;
+    padding: 25px 15px;
+  }
+
+  .box-size {
+    border-radius: 9px;
+    width: 208px;
+    height: 196px;
+    margin-bottom: 16px;
+  }
+
+  .box-title {
+    font-size: 31px;
+    margin-bottom: 12px;
+  }
+
+  .box-points {
+    font-size: 17px;
+  }
+
+  /* Points */
+  .points {
+    padding: 50px;
+    padding-bottom: 80px;
+    border: solid 5px #d2f5ef;
+    border-radius: 0 19px 19px 19px;
+  }
+
+  .points-title {
+    display: none;
+  }
+
+  .lvl {
+    font-size: 27px;
+  }
+
+  .progressbar {
+    margin-bottom: 4px;
+  }
+
+  .progress {
+    font-size: 14px;
+  }
+
+  .points-subtitle {
+    font-size: 35px;
+    margin: 0;
+  }
+
+  .requirement-list {
+    margin-top: 2px;
+    gap: 12px 60px;
+  }
+
+  .requirement-title {
+    font-size: 20px;
+  }
+
+  .requirement-field {
+    padding: 0 12px;
+    height: 20px;
+    font-size: 20px;
+    z-index: 10;
+  }
+
+  .counter-field {
+    padding: 0 10px;
+    border-radius: 6px;
+    font-size: 20px;
+    margin: 0 4px;
+  }
+
+  .sign {
+    font-size: 29px;
+    text-align: center;
+  }
+
+  .insufficient-btn {
+    padding: 4px 10px;
+    font-size: 16px;
+    border-radius: 7px;
+  }
+
+  /* raffle */
+  .reffle {
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .colection {
+    padding-top: 12px;
+  }
+  .raffle-title {
+    display: none;
+  }
+
+  .winners {
+    padding-right: 120px;
+
+    border: none;
+  }
+
+  .wi {
+    display: flex;
+    margin-bottom: 8px;
+  }
+
+  .number-wins {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .numbers-win {
+    font-size: 20px;
+    margin-right: 4px;
+  }
+
+  .winners-list {
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+
+  .winners-list-item {
+    gap: 8px;
+  }
+
+  .win-box {
+    border-radius: 6px;
+    width: 39px;
+    height: 39px;
+  }
+
+  .winners-text {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #fff;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bacground {
+    position: relative;
+    width: 1240px;
+    border-radius: 28px;
+    border: solid 5px #d2f5ef;
+  }
+
+  .svg-box {
+    position: absolute;
+    background-image: url('../../img/star-d.svg');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    top: -5%;
+    left: -2%;
+  }
+
+  .folder-1 {
+    position: absolute;
+    background-image: url('../../img/Group35.png');
+    background-repeat: no-repeat;
+    background-size: 550px 300px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 6%;
+    left: 52%;
+  }
+
+  .folder-2 {
+    position: absolute;
+    background-image: url('../../img/Group34.png');
+    background-repeat: no-repeat;
+    background-size: 550px 275px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 58%;
+    left: 52%;
+  }
+
+  .I {
+    border-right: solid 5px #d2f5ef;
+  }
+
+  .user-head {
+    padding: 45px 0;
+    border-radius: 20px 0 20px 20px;
+    border: solid 5px #d2f5ef;
+  }
+
+  .user-week {
+    font-size: 133px;
+  }
+
+  .value {
+    padding: 0 8px;
+    height: 47px;
+    font-size: 45px;
+    border-radius: 5px;
+    z-index: 10;
+  }
+
+  .label {
+    font-size: 50px;
+  }
+  /* Box */
+  .user-box {
+    gap: 0 68px;
+    padding: 25px 15px;
+  }
+
+  .box-size {
+    border-radius: 10px;
+    width: 234px;
+    height: 221px;
+    margin-bottom: 16px;
+  }
+
+  .box-title {
+    font-size: 35px;
+    margin-bottom: 12px;
+  }
+
+  .box-points {
+    font-size: 20px;
+  }
+
+  /* Points */
+  .points {
+    padding: 50px;
+    padding-bottom: 80px;
+    border: solid 5px #d2f5ef;
+    border-radius: 0 19px 19px 19px;
+  }
+
+  .points-title {
+    display: none;
+  }
+
+  .lvl {
+    font-size: 30px;
+  }
+
+  .progressbar {
+    margin-bottom: 4px;
+  }
+
+  .progress {
+    font-size: 15px;
+  }
+
+  .points-subtitle {
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .requirement-list {
+    margin-top: 2px;
+    gap: 12px 60px;
+  }
+
+  .requirement-title {
+    font-size: 23px;
+  }
+
+  .requirement-field {
+    padding: 0 12px;
+    height: 20px;
+    font-size: 23px;
+    z-index: 10;
+  }
+
+  .counter-field {
+    padding: 0 10px;
+    border-radius: 6px;
+    font-size: 30px;
+    margin: 0 4px;
+  }
+
+  .sign {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .insufficient-btn {
+    padding: 4px 10px;
+    font-size: 18px;
+    border-radius: 7px;
+  }
+
+  /* raffle */
+  .reffle {
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .colection {
+    padding-top: 26px;
+    justify-content: space-around;
+  }
+
+  .raffle-title {
+    display: none;
+  }
+
+  .wi {
+    display: flex;
+    margin-bottom: 8px;
+  }
+
+  .number-wins {
+    font-size: 23px;
+    margin-bottom: 8px;
+  }
+
+  .numbers-win {
+    font-size: 23px;
+    margin-right: 4px;
+  }
+
+  .winners-list {
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+
+  .winners-list-item {
+    gap: 8px;
+  }
+
+  .win-box {
+    border-radius: 6px;
+    width: 39px;
+    height: 39px;
+  }
+
+  .winners-text {
+    font-size: 23px;
+    text-transform: capitalize;
+    color: #fff;
+  }
 }
