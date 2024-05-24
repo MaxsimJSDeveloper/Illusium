@@ -460,7 +460,7 @@
 
   .folder-1 {
     position: absolute;
-    background-image: url('../../img/Group35.png');
+    background-image: url('../../img/folder-1.png');
     background-repeat: no-repeat;
     background-size: 510px 270px;
     width: 100%;
@@ -472,7 +472,7 @@
 
   .folder-2 {
     position: absolute;
-    background-image: url('../../img/Group34.png');
+    background-image: url('../../img/folder-2.png');
     background-repeat: no-repeat;
     background-size: 510px 250px;
     width: 100%;
@@ -621,13 +621,13 @@
   .colection {
     padding-top: 12px;
   }
+
   .raffle-title {
     display: none;
   }
 
   .winners {
     padding-right: 120px;
-
     border: none;
   }
 
@@ -659,6 +659,7 @@
     border-radius: 6px;
     width: 39px;
     height: 39px;
+    z-index: 10;
   }
 
   .winners-text {
@@ -687,9 +688,9 @@
 
   .folder-1 {
     position: absolute;
-    background-image: url('../../img/Group35.png');
+    background-image: url('../../img/folder-1.png');
     background-repeat: no-repeat;
-    background-size: 550px 300px;
+    background-size: 560px 300px;
     width: 100%;
     height: 100%;
     z-index: 10;
@@ -699,9 +700,9 @@
 
   .folder-2 {
     position: absolute;
-    background-image: url('../../img/Group34.png');
+    background-image: url('../../img/folder-2.png');
     background-repeat: no-repeat;
-    background-size: 550px 275px;
+    background-size: 560px 275px;
     width: 100%;
     height: 100%;
     z-index: 10;
