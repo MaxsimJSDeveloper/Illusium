@@ -259,6 +259,21 @@
   color: #fff;
 }
 
+.win-btn {
+  border-radius: 3px;
+  width: 56px;
+  height: 11px;
+  background: #cdf4ee;
+  font-size: 6px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #15172a;
+  display: block;
+  margin-left: auto;
+  margin-top: 8px;
+}
+
 @media (min-width: 850px) {
   .user {
     padding-top: 50px;
@@ -432,6 +447,13 @@
     font-size: 20px;
     text-transform: capitalize;
     color: #fff;
+  }
+
+  .win-btn {
+    font-size: 17px;
+    border-radius: 7px;
+    width: 149px;
+    height: 31px;
   }
 }
 
@@ -614,8 +636,6 @@
   /* raffle */
   .reffle {
     padding: 10px 50px;
-    display: flex;
-    flex-direction: column-reverse;
   }
 
   .colection {
@@ -667,6 +687,14 @@
     text-transform: capitalize;
     color: #fff;
   }
+
+  .win-btn {
+    margin-top: 30px;
+    font-size: 17px;
+    border-radius: 7px;
+    width: 149px;
+    height: 31px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -681,8 +709,8 @@
     position: absolute;
     background-image: url('../../img/star-d.svg');
     background-repeat: no-repeat;
-    background-size: 70%;
-    top: -5%;
+    background-size: 60%;
+    top: -1%;
     left: -2%;
   }
 
@@ -823,8 +851,6 @@
   /* raffle */
   .reffle {
     padding: 10px 50px;
-    display: flex;
-    flex-direction: column-reverse;
   }
 
   .colection {
@@ -871,4 +897,16 @@
     text-transform: capitalize;
     color: #fff;
   }
+
+  .win-btn {
+    margin-top: 45px;
+    font-size: 20px;
+    border-radius: 8px;
+    width: 168px;
+    height: 35px;
+  }
+}
+
+.c {
+  background-color: #292d52;
 }
