@@ -31,7 +31,7 @@
 
 .sidebar-anchor {
   color: #fff;
-  position: relative; /* зберігаємо позицію відносно батька */
+  position: relative;
 }
 
 .sidebar-anchor:before {
