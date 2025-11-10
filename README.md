@@ -1,4 +1,4 @@
-## Commercial project
+## Commercial project for crypto
 
 It's a multi-page website where I implemented design and animation. A website
 with games for earning in NFTs.
